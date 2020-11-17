@@ -15,7 +15,7 @@ $ cd ERROR200-reactjs-covid19-center-manager
 $ npm install
 $ npm start
 ```
-## Covid center center finder github Repository
+## Covid19 center finder github Repository
 * [https://github.com/jyotiprakash-m/ERROR200-reactjs-Covid19-centers-and-info](https://github.com/jyotiprakash-m/ERROR200-reactjs-Covid19-centers-and-info)
 
 ## Technologies
