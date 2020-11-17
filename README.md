@@ -11,7 +11,7 @@
 To run this project, install it locally using npm:
 
 ```
-$ cd ERROR200-reactjs-Covid19-centers-and-info
+$ cd ERROR200-reactjs-covid19-center-manager
 $ npm install
 $ npm start
 ```
