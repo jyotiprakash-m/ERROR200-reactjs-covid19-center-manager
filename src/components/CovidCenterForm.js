@@ -11,6 +11,7 @@ const CovidCenterForm = (props) => {
     var [values, setValues] = useState(initialFieldValues)
 
 
+    // Use for display the input in input field
     useEffect(() => {
         if (props.currentId == '')
             setValues({ ...initialFieldValues })
@@ -20,6 +21,7 @@ const CovidCenterForm = (props) => {
             })
     }, [props.currentId, props.covidCenterObjects])
 
+    // Handel the input submition
     const handleInputChange = e => {
         var { name, value } = e.target;
         setValues({

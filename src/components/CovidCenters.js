@@ -9,6 +9,7 @@ const CovidCenters = () => {
     var [covidCenterObjects, setcovidCenterObjects] = useState({})
 
     //Once components load complete
+    
     useEffect(() => {
         firebaseDb.child('covidCenters').on('value', snapshot => {
             if (snapshot.val() != null) {
@@ -22,6 +23,7 @@ const CovidCenters = () => {
         })
     }, [])
 
+// Function use for push and set data in database
 
     const addOrEdit = (obj) => {
         if (currentId == '')
@@ -43,6 +45,8 @@ const CovidCenters = () => {
                         setCurrentId('')
                 })
     }
+
+    // Function Use for Delete data from database
 
     const onDelete = id => {
         if (window.confirm('Are you sure to delete this record?')) {
