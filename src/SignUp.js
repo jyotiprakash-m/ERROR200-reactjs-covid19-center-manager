@@ -24,7 +24,7 @@ const SignUp = ({ history }) => {
       <div className="heading">
         <h1>Covid Center manager</h1>
       </div>
-      <h1>Sign Up</h1>
+      <h4>Sign Up</h4>
       <form onSubmit={handleSignUp}>
         <div className="form">
           <div className="form_input">

@@ -34,7 +34,7 @@ const Login = ({ history }) => {
       <div className="heading">
         <h1>Covid Center manager</h1>
       </div>
-      <h1>Log in</h1>
+      <h4>Log in</h4>
       <form onSubmit={handleLogin}>
         <div className="form">
           <div className="form_input">
