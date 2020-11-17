@@ -13,7 +13,7 @@ const App = () => {
         <div>
           <PrivateRoute exact path="/" component={AdminPanel} />
           <Route exact path="/login" component={Login} />
-          {/* <Route exact path="/signup" component={SignUp} /> */}
+          <Route exact path="/signup" component={SignUp} />
         </div>
       </Router>
     </AuthProvider>

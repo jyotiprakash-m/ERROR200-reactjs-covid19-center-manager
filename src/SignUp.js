@@ -2,6 +2,8 @@ import React, { useCallback } from "react";
 import { withRouter } from "react-router";
 import app from "./firebase";
 
+import './SignUp.css'
+
 const SignUp = ({ history }) => {
   const handleSignUp = useCallback(async event => {
     event.preventDefault();
@@ -17,19 +19,32 @@ const SignUp = ({ history }) => {
   }, [history]);
 
   return (
-    <div>
-      <h1>Sign up</h1>
+    <div className="login">
+      <div className="login_form">
+      <div className="heading">
+        <h1>Covid Center manager</h1>
+      </div>
+      <h1>Sign Up</h1>
       <form onSubmit={handleSignUp}>
-        <label>
-          Email
-          <input name="email" type="email" placeholder="Email" />
-        </label>
-        <label>
-          Password
-          <input name="password" type="password" placeholder="Password" />
-        </label>
-        <button type="submit">Sign Up</button>
+        <div className="form">
+          <div className="form_input">
+            <label>
+              Email
+            </label>
+            <input name="email" type="email" placeholder="Email" />
+          </div>
+          <div className="form_input">      
+            <label>
+              Password
+            </label>
+            <input name="password" type="password" placeholder="Password" />
+          </div>
+          
+        <button type="submit">Signup</button>
+        </div>
       </form>
+      </div>
+
     </div>
   );
 };

@@ -3,6 +3,8 @@ import { withRouter, Redirect } from "react-router";
 import app from "./firebase.js";
 import { AuthContext } from "./Auth.js";
 
+import './Login.css'
+
 const Login = ({ history }) => {
   const handleLogin = useCallback(
     async event => {
@@ -27,19 +29,32 @@ const Login = ({ history }) => {
   }
 
   return (
-    <div>
+    <div className="login">
+      <div className="login_form">
+      <div className="heading">
+        <h1>Covid Center manager</h1>
+      </div>
       <h1>Log in</h1>
       <form onSubmit={handleLogin}>
-        <label>
-          Email
-          <input name="email" type="email" placeholder="Email" />
-        </label>
-        <label>
-          Password
-          <input name="password" type="password" placeholder="Password" />
-        </label>
+        <div className="form">
+          <div className="form_input">
+            <label>
+              Email
+            </label>
+            <input name="email" type="email" placeholder="Email" />
+          </div>
+          <div className="form_input">      
+            <label>
+              Password
+            </label>
+            <input name="password" type="password" placeholder="Password" />
+          </div>
+          
         <button type="submit">Log in</button>
+        </div>
       </form>
+      </div>
+
     </div>
   );
 };
