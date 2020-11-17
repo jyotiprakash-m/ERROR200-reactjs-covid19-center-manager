@@ -39,4 +39,4 @@ Project is created with:
 
 ## Project-Deployed
 
-* [https://covid-centers-info.netlify.app/](https://covid-centers-info.netlify.app/)
+* [https://covid-center-manager.netlify.app](https://covid-center-manager.netlify.app)
